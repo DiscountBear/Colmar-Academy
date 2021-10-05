@@ -1,0 +1,36 @@
+/*Universal Styles*/
+* {
+    font-family: sans-serif;
+}
+
+/*Header Styles*/
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 24px;
+    height: 64px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header h2 {
+    height: 32px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-left: 16px;
+}
+
