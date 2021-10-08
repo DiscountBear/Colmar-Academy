@@ -1,36 +1,254 @@
 /*Universal Styles*/
 * {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /*Header Styles*/
 header {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 24px;
     height: 64px;
+    padding: 0px 24px;
+    display: flex;
+    justify-content: space-between;
 }
 
-header div {
+.logo {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
 }
 
-header h2 {
-    height: 32px;
+.logo-text-2 {
+    color: lightgray;
+    font-weight: normal;
 }
 
-ul {
-    display: flex;
+.nav {
     list-style: none;
+    display: flex;
 }
 
-li {
+.nav-item {
+    display: flex;
     margin-left: 16px;
+    align-items: center;
 }
 
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    color: blue;
+}
+
+.nav a:active {
+    color: red;
+}
+
+
+/*Banner Section Styles*/
+.banner {
+    background-color: lightgray;
+    display: flex;
+}
+
+.banner-container-left {
+    width: 60%;
+    margin: 32px 24px;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text-container h1, h3, p {
+    margin: 10px 0px;
+}
+
+.banner-text-container p {
+    color: white;
+    background-color: gray;
+    text-align: center;
+    width: 85%;
+    padding: 8px 0px;
+}
+
+
+/*Information Section Styles*/
+.information {
+    display: flex;
+}
+
+.information-container-left {
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 1px solid lightgray;
+}
+
+.information-container-left img {
+    height: auto;
+    width: 100%;
+}
+
+.information-container-left h1 {
+    padding-top: 32px;
+}
+
+.information-container-left p {
+    padding-top: 24px;
+}
+
+.information-container-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information-container-bar {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.information-container-bar img {
+    width: 35%;
+    height: auto;
+    padding: 16px 16px;
+}
+
+.information-container-bar-right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information-container-bar-3 {
+    background-color: lightgray;
+}
+
+/*Courses Section Styles*/
+.courses {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses h1 {
+    padding-top: 32px;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    margin: 32px 32px;
+    flex: 1;
+}
+
+.card img {
+    height: auto;
+    width: 100%;
+}
+
+.card-text {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+}
+
+.card-text p {
+    margin: 8px 0px;
+}
+
+
+/*Thesis Section Styles*/
+.thesis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thesis h1 {
+    padding: 32px 0px;
+}
+
+.thesis-container-left h3 {
+    padding-bottom: 8px;
+}
+
+.thesis-container {
+    display: flex;
+    padding-bottom: 32px;
+}
+
+.thesis-container-left {
+    width: 60%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.thesis-container-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.longcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.longcard img {
+    width: 35%;
+    height: auto;
+    padding: 16px 16px;
+}
+
+.longcard-right {
+    width: 65%;
+}
+
+.longcard-1 {
+    background-color: lightgray;
+}
+
+video {
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+
+/*Footer Section Styles*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    padding: 16px 24px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+footer li {
+    padding-left: 16px;
+}
