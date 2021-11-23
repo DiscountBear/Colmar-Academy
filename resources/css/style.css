@@ -23,7 +23,7 @@
 
 /*--End CSS Reset--*/
 
-/*--Start Nav Section Styles--*/
+/*--Start Nav Section Styles (Desktop)--*/
 
 #navbar {
     width: 100%;
@@ -40,6 +40,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#nav-logo:hover {
+    text-shadow: 0px 3px 3px gray;
+}
+#nav-logo:active {
+    text-shadow: 0px 0px 3px gray;
+    transform:translateY(2px);
 }
 #nav-logo img {
     height: 2rem;
@@ -63,7 +70,7 @@
     background-color: gray;
 }
 
-/*--End Nav Section Styles--*/
+/*--End Nav Section Styles (Desktop)--*/
 
 /*Banner Section Styles*/
 .banner {
