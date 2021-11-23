@@ -20,6 +20,10 @@
     font-style: inherit;
     font-size: 100%;
 }
+/*Smooth Jazz*/
+* {
+    scroll-behavior: smooth;
+}
 
 /*--End CSS Reset--*/
 
