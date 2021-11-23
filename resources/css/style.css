@@ -1,5 +1,4 @@
 /*--Start CSS Reset--*/
-
 /*Box Sizing*/
 *,
 *::before,
@@ -24,19 +23,15 @@
 * {
     scroll-behavior: smooth;
 }
-
 /*--End CSS Reset--*/
 
 /*--Start Font Styles--*/
-
 * {
     font-family: sans-serif;
 }
-
 /*--End Font Styles--*/
 
 /*--Start Nav Section Styles (Desktop)--*/
-
 #navbar {
     width: 100%;
     height: 4rem;
@@ -92,8 +87,47 @@
     color: white;
     background-color: black;
 }
-
+/*Hide Mobile Navbar*/
+#mobile-nav-list {
+    display: none;
+}
 /*--End Nav Section Styles (Desktop)--*/
+
+/*--Start Nav Section Styles (Mobile)--*/
+@media only screen and (max-width: 768px) {
+    /*Hide Desktop Navbar*/
+    #nav-logo {
+        display: none;
+    }
+    #nav-list {
+        display: none;
+    }
+    /*Show Mobile Navbar*/
+    #mobile-nav-list {
+        display: contents;
+    }
+    /*Mobile Navbar Styles*/
+    #navbar {
+    }
+    #mobile-nav-list {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mobile-nav-link {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+    }
+    .mobile-nav-link img {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+/*--End Nav Section Styles (Mobile)--*/
 
 /*Banner Section Styles*/
 .banner {
