@@ -171,6 +171,13 @@ a {
     max-width: 60%;
     margin-right: 1.5rem;
 }
+#welcome-text-container {
+    max-width: 31.25rem;
+}
+#welcome-text-container p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
 #welcome-button {
     display: block;
     text-align: center;
@@ -178,6 +185,13 @@ a {
     padding: 0.5rem 0;
     color: white;
     background-color: darkslategray;
+}
+#welcome-button:hover {
+    background-color: gray;
+}
+#welcome-button:active {
+    color: black;
+    background-color: white;
 }
 /*--End Welcome Section Styles (Desktop)--*/
 
