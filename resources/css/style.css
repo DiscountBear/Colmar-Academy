@@ -23,6 +23,9 @@
 * {
     scroll-behavior: smooth;
 }
+html {
+    scroll-behavior: smooth;
+}
 /*--End CSS Reset--*/
 
 /*--Start Font Styles--*/
@@ -151,9 +154,19 @@ a {
         width: 4rem;
         height: 4rem;
     }
+    .mobile-nav-link:hover {
+        background-color: gray;
+    }
+    .mobile-nav-link:active {
+        background-color: black;
+    }
     .mobile-nav-link img {
         height: 4rem;
         width: 4rem;
+        padding: 0 1rem;
+    }
+    .mobile-nav-link img:active {
+        filter: invert(1.0);
     }
 }
 /*--End Nav Section Styles (Mobile)--*/
