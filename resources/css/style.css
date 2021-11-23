@@ -26,8 +26,38 @@
 /*--End CSS Reset--*/
 
 /*--Start Font Styles--*/
-* {
-    font-family: sans-serif;
+/*Set Font-Families and Base Font Size*/
+html {
+    font-family: 'Quattrocento', serif;
+    font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Oswald', sans-serif;
+}
+/*Set Font Sizes*/
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+h4 {
+    font-size: 1rem;
+}
+p {
+    font-size: 1rem;
+}
+a {
+    font-size: 1rem;
 }
 /*--End Font Styles--*/
 
@@ -46,7 +76,7 @@
     box-shadow: 0 1px 1px black;
 }
 #nav-logo {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -68,6 +98,7 @@
 }
 #nav-logo span {
     color: gray;
+    font-size: 1.5rem;
 }
 #nav-list {
     list-style: none;
@@ -78,7 +109,7 @@
     display: block;
     text-decoration: none;
     color: black;
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
 }
 .nav-link:hover {
     background-color: gray;
