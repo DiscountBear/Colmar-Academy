@@ -209,6 +209,31 @@ a {
 /*--End Welcome Section Styles (Desktop)--*/
 
 /*--Start Welcome Section Styles (Mobile)--*/
+@media only screen and (max-width: 768px) {
+    #welcome {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #welcome-banner-image {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #welcome-text-container {
+        max-width: 100%;
+        padding: 2rem 1rem;
+        margin: 0;
+        text-align: center;
+    }
+    #welcome-text-container h1 {
+        padding-bottom: 2rem;
+    }
+    #welcome-text-container p {
+        padding-bottom: 1.5rem;
+    }
+}
 /*--End Welcome Section Styles (Mobile)--*/
 
 /*Information Section Styles*/
