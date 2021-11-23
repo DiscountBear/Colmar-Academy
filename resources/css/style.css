@@ -127,6 +127,29 @@
 }
 /*--End Nav Section Styles (Mobile)--*/
 
+/*--Start Welcome Section Styles (Desktop)--*/
+#welcome {
+    background-color: lightgray;
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-banner-image {
+    display: block;
+    max-width: 60%;
+    margin-right: 1.5rem;
+}
+#welcome-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    color: white;
+    background-color: darkslategray;
+}
+/*--End Welcome Section Styles (Desktop)--*/
+
 /*Banner Section Styles*/
 .banner {
     background-color: lightgray;
