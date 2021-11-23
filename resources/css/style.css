@@ -87,6 +87,10 @@
 .nav-link:hover {
     background-color: gray;
 }
+.nav-link:active {
+    color: white;
+    background-color: black;
+}
 
 /*--End Nav Section Styles (Desktop)--*/
 
