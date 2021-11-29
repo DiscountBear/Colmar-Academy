@@ -412,6 +412,7 @@ background-color: white;
 }
 .course-card:hover {
     background-color: gray;
+    box-shadow: 2px 2px 2px black;
 }
 .course-card:active {
     background-color: black;
