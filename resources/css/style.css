@@ -177,29 +177,36 @@ a {
 }
 /*--End Nav Section Styles (Mobile)--*/
 
+/*--Start Body and Main Styles--*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main {
+    max-width: 1600px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+/*--End Body and Main Styles--*/
+
 /*--Start Welcome Section Styles (Desktop)--*/
 #welcome {
     background-color: lightgray;
-    padding: 2rem 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#welcome-content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1536px;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
 }
 #welcome-banner-image {
     display: block;
     max-width: 60%;
-    margin-right: 1.5rem;
+    padding: 2rem 1.5rem;
 }
 #welcome-text-container {
     max-width: 40%;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 #welcome-text-container p {
     font-size: 1.5rem;
@@ -254,7 +261,6 @@ a {
 #information {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 #information-content-container {
     display: flex;
@@ -264,15 +270,18 @@ a {
     border-left: 1px solid lightgray;
 }
 #information-main {
-    max-width: 60%;
-    padding: 2rem 1.5rem;
     border-right: solid lightgray;
+    width: 60%;
 }
 #information-main img {
     display: block;
     width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
+    padding: 2rem 1.5rem;
+}
+#information-main-textbox {
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+    padding-right: 1.5rem;
 }
 #information-main-quote {
     margin-top: 1.5rem;
@@ -316,133 +325,244 @@ a {
     color: red;
     text-decoration: underline;
 }
-/*
-#information {
-    display: flex;
-    justify-content: center;
+.information-sidebar-card-text-container a:active {
+    color: purple;
 }
-#information-main {
-    border-right: 1px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 60%;
+/*Hide Mobile Section*/
+#mobile-information-section {
+    display: none;
 }
-#information-main img {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 2rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: 2rem;
-}
-#information-main-textbox {
-    max-width:inherit;
-}
-#information-main-quote {
-    padding: 1.5rem 0;
-}
-#information-sidebar {
-    max-width: 40%;
-    margin-top: 1rem;
-}
-.information-sidebar-card {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 1rem;
-}
-.information-sidebar-card img {
-    display: block;
-    width: 35%;
-    height: auto;
-    margin-right: 1rem;
-}
-.information-sidebar-card-text-container {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.information-sidebar-card-text-container p {
-    margin: 0.5rem 0;
-}*/
 /*--End Information Section Styles (Desktop)--*/
-.courses {
+
+/*--Start Information Section Styles (Mobile)--*/
+@media only screen and (max-width: 768px) {
+    /*Hide Desktop Information Section and Show Mobile Section*/
+    #information-main {
+        display: none;
+    }
+    #information-sidebar {
+        display: none;
+    }
+    #mobile-information-section {
+        display: contents;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }
+    .mobile-information-card {
+        padding-bottom: 2rem;
+    }
+    .mobile-information-card:hover {
+        background-color: lightgray;
+    }
+    .mobile-information-card img {
+        display: block;
+        width: 100%;
+    }
+    .mobile-information-card-textbox {
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+    }
+    .mobile-information-card-textbox p {
+        margin: 0.5rem 0;
+    }
+    .mobile-information-card-textbox a {
+        text-decoration: none;
+        color:dodgerblue;
+    }
+    .mobile-information-card-textbox a:hover {
+        text-decoration: underline;
+        color: red;
+    }
+    .mobile-information-card-textbox a:active {
+        color: purple;
+    }
+}
+/*--End Information Section Styles (Mobile)--*/
+
+/*--Start Course Section Styles (Desktop)--*/
+#course {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#course-heading {
+    padding-top: 2rem;
+}
+#course-grid-container {
+    padding: 2rem 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.course-card {
+background-color: white;
+}
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+.course-card-textbox {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+}
+.course-card-textbox p {
+    margin-top: 0.5rem;
+}
+.course-card:hover {
     background-color: gray;
 }
+.course-card:active {
+    background-color: black;
+    color: white;
+}
+#mobile-course {
+    display: none;
+}
+/*--End Course Section Styles (Desktop)--*/
 
-/*Thesis Section Styles*/
-.thesis {
+/*--Start Course Section Styles (Mobile)--*/
+@media only screen and (max-width: 768px) {
+    #course {
+        display: none;
+    }
+    #mobile-course {
+        display: contents;
+        display: block;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 2rem;
+    }
+    #mobile-course-heading {
+        text-align: center;
+        padding: 2rem 0 0.5rem 0;
+    }
+    #mobile-course h3 {
+        background-color: lightgray;
+        margin: 0.5rem 1rem 0 1rem;
+        padding: 1rem;
+    }
+    #mobile-course h3:hover {
+        background-color: gray;
+    }
+    #mobile-course h3:active {
+        background-color: black;
+        color: white;
+    }
+}
+/*--End Course Section Styles (Mobile)--*/
+
+/*--Start Thesis Section Styles (Desktop)--*/
+#thesis-heading {
+    text-align: center;
+    padding: 2rem 0;
+}
+#thesis-content-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
-.thesis h1 {
-    padding: 32px 0px;
+#thesis-content-main {
+    max-width: 60%;
+    padding: 0 1.5rem 2rem 1.5rem;
 }
-
-.thesis-container-left h3 {
-    padding-bottom: 8px;
+#thesis-content-main video {
+    width: 100%;
 }
-
-.thesis-container {
+#thesis-content-main-textbox h2 {
+    padding: 1.5rem 0 0.5rem 0;
+}
+#thesis-sidebar {
+    max-width: 40%;
+}
+.thesis-sidebar-card {
     display: flex;
-    padding-bottom: 32px;
 }
-
-.thesis-container-left {
-    width: 60%;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.thesis-container-right {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-.longcard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.longcard img {
+.thesis-sidebar-card img {
+    display: block;
     width: 35%;
     height: auto;
-    padding: 16px 16px;
+    padding: 1rem;
 }
-
-.longcard-right {
+.thesis-sidebar-card-textbox {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-.longcard-1 {
+#thesis-sidebar-card-1 {
     background-color: lightgray;
 }
-
-video {
-    width: 100%;
-    padding-bottom: 24px;
+#thesis-sidebar-card-1:hover {
+    background-color: gray;
 }
+#thesis-sidebar-card-1:active {
+    background-color: black;
+    color: white;
+}
+#thesis-sidebar-card-2:hover {
+    background-color: gray;
+}
+#thesis-sidebar-card-2:active {
+    background-color: black;
+    color: white;
+}
+#mobile-thesis-section {
+    display: none;
+}
+/*--End Thesis Section Styles (Desktop)--*/
 
+/*--Start Thesis Section Styles (Mobile)--*/
+@media only screen and (max-width: 768px) {
+    #thesis {
+        display: none;
+    }
+    #mobile-thesis-section {
+        display: contents;
+    }
+    #mobile-thesis-heading {
+        text-align: center;
+        padding: 2rem 0 1rem 0;
+    }
+    #mobile-thesis-section video {
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+}
+/*--End Thesis Section Styles (Mobile)--*/
 
-/*Footer Section Styles*/
+/*--Start Footer Section Styles (Desktop)--*/
 footer {
+    width: 100%;
+    border-top: 1px solid lightgray;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid lightgray;
-    padding: 16px 24px;
+    align-items: center;
+    padding: 1rem 1.5rem 1rem 1.5rem;
 }
-
 footer ul {
     list-style: none;
     display: flex;
-    flex-flow: row nowrap;
 }
+footer a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    color: gray;
+}
+/*--End Footer Section Styles (Desktop)--*/
 
-footer li {
-    padding-left: 16px;
+/*--Start Footer Section Styles (Mobile)--*/
+@media only screen and (max-width: 768px) {
+    footer ul {
+        display: none;
+    }
+    footer {
+        justify-content: center;
+    }
+    footer p {
+        text-align: center;
+    }
 }
+/*--End Footer Section Styles (Mobile)--*/
